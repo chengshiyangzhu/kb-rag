@@ -1,0 +1,55 @@
+# Default non-sensitive configuration for kb-rag.
+# Values mirror .env.example and may be overridden by environment variables.
+
+application:
+  app_env: dev
+  log_level: INFO
+
+embedder:
+  provider: local            # local | ollama | api
+  model: BAAI/bge-m3
+  dim: 1024
+
+ollama:
+  base_url: http://ollama:11434
+
+openai:
+  api_key: ""
+  base_url: https://api.openai.com/v1
+
+zhipu:
+  api_key: ""
+  base_url: https://open.bigmodel.cn/api/paas/v4
+
+llm:
+  provider: openai           # openai | zhipu | ollama
+  model: gpt-4o-mini
+
+vector_store:
+  type: qdrant               # qdrant | chroma
+  qdrant_url: http://qdrant:6333
+  qdrant_collection: kb_rag
+  chroma_path: ./data/chroma
+
+chunker:
+  type: recursive            # recursive | fixed | semantic | structural
+  chunk_size: 512
+  chunk_overlap: 64
+
+retrieval:
+  top_n: 20
+  rerank_top_k: 5
+  rerank_model: BAAI/bge-reranker-v2-m3
+  rerank_threshold: 0.3
+
+fusion:
+  rrf_k: 60
+
+bm25:
+  index_path: ./data/bm25.pkl
+
+observability:
+  prometheus_port: 9090
+  grafana_port: 3000
+  api_port: 8000
+  ui_port: 8501

@@ -1,0 +1,14 @@
+{"question": "Python 中如何定义一个函数？", "ground_truth": "使用 def 关键字定义函数，语法为 def 函数名(参数): 函数体"}
+{"question": "Python 的列表和元组有什么区别？", "ground_truth": "列表是可变的（mutable），元组是不可变的（immutable）；列表用方括号 []，元组用圆括号 ()"}
+{"question": "如何在 Python 中捕获并处理异常？", "ground_truth": "使用 try/except 语句捕获异常，可配合 else 和 finally 子句"}
+{"question": "Python 中如何创建和使用虚拟环境？", "ground_truth": "用 python -m venv venv_name 创建虚拟环境，激活后可在隔离环境中安装依赖"}
+{"question": "Python 中 with 语句的作用是什么？", "ground_truth": "with 语句用于上下文管理，确保资源（如文件、锁）在使用后自动释放"}
+{"question": "产品规格表 X-2025 中标准功耗是多少瓦？", "ground_truth": "产品 X-2025 的标准功耗为 65W"}
+{"question": "X-2025 产品支持的最大工作温度是多少？", "ground_truth": "X-2025 支持的最大工作温度为 70 摄氏度"}
+{"question": "产品规格表 X-2025 中列出的外部接口有哪些？", "ground_truth": "X-2025 提供 USB-C、HDMI 2.1 和 RJ45 以太网接口"}
+{"question": "X-2025 的标准保修期是多长时间？", "ground_truth": "X-2025 标准保修期为 24 个月"}
+{"question": "员工手册规定的标准工作时间是怎样的？", "ground_truth": "标准工作时间为每周 5 天，每天 8 小时，周一至周五 9:00-18:00"}
+{"question": "员工年假天数如何根据工龄计算？", "ground_truth": "工龄满 1 年享 5 天年假，满 3 年享 10 天，满 10 年享 15 天"}
+{"question": "员工手册中关于远程办公的政策是什么？", "ground_truth": "允许每周最多 2 天远程办公，需提前经直属经理审批"}
+{"question": "火星上奥林帕斯山的高度是多少？", "ground_truth": "火星上奥林帕斯山（Olympus Mons）高约 21.9 公里"}
+{"question": "请说明量子 Shor 算法的原理", "ground_truth": "Shor 算法是一种量子算法，可在多项式时间内分解大整数，由 Peter Shor 于 1994 年提出"}
